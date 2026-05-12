@@ -1,0 +1,258 @@
+/* ===========================
+   RESET & BASE
+=========================== */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f5f2ed;
+    --white: #ffffff;
+    --text-dark: #1a1a1a;
+    --text-mid: #555555;
+    --text-light: #999999;
+    --border: #e0dcd6;
+    --accent: #2c6e49;
+    --accent-light: #e8f2ec;
+    --radius: 14px;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--bg);
+    color: var(--text-dark);
+    min-height: 100vh;
+}
+
+/* ===========================
+   NAV
+=========================== */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 48px;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: -0.01em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-light);
+    letter-spacing: 0.02em;
+}
+
+/* ===========================
+   HERO
+=========================== */
+.hero {
+    background: var(--white);
+    padding: 64px 48px 52px;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero-inner {
+    max-width: 640px;
+}
+
+.hero-badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    background: var(--accent-light);
+    padding: 6px 14px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    color: var(--text-dark);
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-mid);
+    line-height: 1.7;
+    max-width: 480px;
+}
+
+.hero-divider {
+    display: none;
+}
+
+/* ===========================
+   TOPICS SECTION
+=========================== */
+.topics-section {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+}
+
+.topics-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 26px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 16px rgba(44, 110, 73, 0.1);
+    transform: translateX(4px);
+}
+
+.card-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.card-emoji {
+    font-size: 1.6rem;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    border-radius: 10px;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.card:hover .card-emoji {
+    background: var(--accent-light);
+}
+
+.card-left h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 3px;
+    letter-spacing: -0.01em;
+}
+
+.card-left p {
+    font-size: 0.83rem;
+    font-weight: 400;
+    color: var(--text-light);
+    line-height: 1.4;
+}
+
+.card-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-light);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 5px 12px;
+    border-radius: 100px;
+    flex-shrink: 0;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover .card-badge {
+    background: var(--accent-light);
+    color: var(--accent);
+    border-color: transparent;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+    text-align: center;
+    padding: 28px 24px;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--text-light);
+    font-weight: 400;
+    background: var(--white);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 640px) {
+    .nav {
+        padding: 18px 20px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .hero {
+        padding: 40px 20px 36px;
+    }
+
+    .topics-section {
+        padding: 32px 16px 60px;
+    }
+
+    .card {
+        padding: 18px 18px;
+    }
+
+    .card-emoji {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+}

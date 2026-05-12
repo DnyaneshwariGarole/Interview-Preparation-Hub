@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spring Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav"></div>
+
+<div class="container">
+
+<h1 class="main-title">Spring & Backend Interview Questions</h1>
+
+<div class="questions-grid">
+
+<div class="column">
+
+<details class="question">
+<summary>What is Spring Boot?</summary>
+<p>
+Spring Boot is an extension of the Spring framework that simplifies the development of Java applications. 
+It reduces the need for complex XML configuration and provides features like auto-configuration, embedded servers 
+(such as Tomcat), and production-ready tools. It helps developers quickly build standalone, scalable applications.
+</p>
+</details>
+
+<details class="question">
+<summary>What is Dependency Injection?</summary>
+<p>
+Dependency Injection is a design pattern where objects are provided to a class instead of being created inside it. 
+Spring manages these dependencies automatically, making code loosely coupled, easier to test, and maintainable.
+</p>
+</details>
+
+<details class="question">
+<summary>What is Spring MVC?</summary>
+<p>
+Spring MVC is a web framework based on the Model-View-Controller pattern. 
+It separates application logic into three parts: Model (data), View (UI), and Controller (handles requests). 
+This separation improves maintainability and scalability.
+</p>
+</details>
+
+<details class="question">
+<summary>What is REST API?</summary>
+<p>
+REST (Representational State Transfer) API is a way for client and server to communicate using HTTP methods 
+like GET, POST, PUT, and DELETE. It is stateless, meaning each request contains all necessary information. 
+It commonly returns data in JSON format.
+</p>
+</details>
+
+<details class="question">
+<summary>What is Hibernate?</summary>
+<p>
+Hibernate is an ORM (Object Relational Mapping) framework that maps Java objects to database tables. 
+It reduces the need for writing SQL queries manually and provides features like caching, lazy loading, 
+and automatic table mapping.
+</p>
+</details>
+
+<details class="question">
+<summary>What is JPA?</summary>
+<p>
+JPA (Java Persistence API) is a specification that defines how Java objects are mapped to database tables. 
+Hibernate is one of the implementations of JPA. It standardizes ORM practices in Java.
+</p>
+</details>
+
+<details class="question">
+<summary>What is JDBC?</summary>
+<p>
+JDBC (Java Database Connectivity) is an API used to connect Java applications to databases. 
+It allows executing SQL queries, retrieving results, and managing database connections.
+</p>
+</details>
+
+<details class="question">
+<summary>What is @RestController?</summary>
+<p>
+@RestController is a Spring annotation used to create RESTful web services. 
+It combines @Controller and @ResponseBody, meaning it directly returns data (usually JSON) 
+instead of rendering a view.
+</p>
+</details>
+
+<details class="question">
+<summary>What is @RequestMapping?</summary>
+<p>
+@RequestMapping is used to map HTTP requests to handler methods in a controller. 
+It can specify URL paths, request methods, and parameters to handle incoming requests.
+</p>
+</details>
+
+<details class="question">
+<summary>What is @GetMapping, @PostMapping?</summary>
+<p>
+These are shortcut annotations for handling specific HTTP methods. 
+@GetMapping is used for retrieving data, while @PostMapping is used for creating new resources.
+</p>
+</details>
+
+<details class="question">
+<summary>What is @PathVariable?</summary>
+<p>
+@PathVariable is used to extract values from the URL path and pass them to controller methods. 
+It is commonly used in REST APIs for dynamic data.
+</p>
+</details>
+
+<details class="question">
+<summary>What is @RequestBody?</summary>
+<p>
+@RequestBody is used to bind HTTP request data (usually JSON) to a Java object. 
+It allows sending complex data structures from client to server.
+</p>
+</details>
+
+<details class="question">
+<summary>What is Bean Scope?</summary>
+<p>
+Bean scope defines the lifecycle and visibility of a Spring bean. 
+Common scopes include singleton (one instance), prototype (new instance each time), 
+request, and session.
+</p>
+</details>
+
+<details class="question">
+<summary>What is Spring Container?</summary>
+<p>
+Spring container is the core of Spring framework that manages beans, dependency injection, 
+and lifecycle of objects. It reads configuration and creates objects accordingly.
+</p>
+</details>
+
+<details class="question">
+<summary>What is Auto Configuration?</summary>
+<p>
+Auto-configuration is a feature of Spring Boot that automatically configures application components 
+based on dependencies present in the classpath. It reduces manual setup.
+</p>
+</details>
+
+</div>
+
+
+<div class="column">
+
+<details class="question">
+<summary>What is @Autowired?</summary>
+<p>
+@Autowired is used for automatic dependency injection in Spring. 
+It automatically injects required beans into a class, reducing manual configuration.
+</p>
+</details>
+
+<details class="question">
+<summary>What is application.properties?</summary>
+<p>
+application.properties is a configuration file used in Spring Boot to define application settings 
+like database connection, server port, logging, and more.
+</p>
+</details>
+
+<details class="question">
+<summary>What is bean?</summary>
+<p>
+A bean is an object that is created, managed, and controlled by the Spring container. 
+Beans are defined using annotations or configuration files.
+</p>
+</details>
+
+<details class="question">
+<summary>What is IOC?</summary>
+<p>
+Inversion of Control (IOC) means the control of object creation and management is transferred 
+from the developer to the Spring container, making the code loosely coupled.
+</p>
+</details>
+
+<details class="question">
+<summary>What is @Entity?</summary>
+<p>
+@Entity is used in JPA to mark a class as a database table. 
+Each instance of the class represents a row in the table.
+</p>
+</details>
+
+<details class="question">
+<summary>What is @Repository?</summary>
+<p>
+@Repository is used in the data access layer. 
+It handles database operations and interacts with the database.
+</p>
+</details>
+
+<details class="question">
+<summary>What is @Service?</summary>
+<p>
+@Service is used in the service layer to define business logic. 
+It acts as a bridge between controller and repository.
+</p>
+</details>
+
+<details class="question">
+<summary>What is layered architecture?</summary>
+<p>
+Layered architecture divides application into layers like Controller (presentation), 
+Service (business logic), and Repository (data access), improving maintainability.
+</p>
+</details>
+
+<details class="question">
+<summary>What is DTO?</summary>
+<p>
+DTO (Data Transfer Object) is used to transfer data between layers. 
+It helps in reducing unnecessary data exposure and improves performance.
+</p>
+</details>
+
+<details class="question">
+<summary>What is validation in Spring?</summary>
+<p>
+Validation ensures that incoming data is correct and meets required conditions. 
+Spring provides annotations like @NotNull, @Size, and @Email for validation.
+</p>
+</details>
+
+<details class="question">
+<summary>What is exception handling in Spring?</summary>
+<p>
+Spring provides global exception handling using @ControllerAdvice and @ExceptionHandler. 
+It helps in handling errors centrally and returning proper responses.
+</p>
+</details>
+
+<details class="question">
+<summary>What is Spring Security?</summary>
+<p>
+Spring Security is a framework used to secure applications. 
+It provides authentication, authorization, and protection against attacks like CSRF.
+</p>
+</details>
+
+<details class="question">
+<summary>What is JWT?</summary>
+<p>
+JWT (JSON Web Token) is used for secure authentication. 
+It stores user information in a token and is commonly used in REST APIs.
+</p>
+</details>
+
+<details class="question">
+<summary>What is microservices?</summary>
+<p>
+Microservices architecture divides an application into small independent services. 
+Each service runs separately and communicates via APIs, improving scalability.
+</p>
+</details>
+
+<details class="question">
+<summary>What is API testing?</summary>
+<p>
+API testing verifies that APIs work correctly. 
+Tools like Postman are used to test endpoints, validate responses, and ensure performance.
+</p>
+</details>
+
+</div>
+
+</div>
+
+<div class="bottom-nav">
+<a href="sql.html" class="nav-btn">← Back</a>
+<a href="index.html" class="nav-btn">Next →</a>
+</div>
+
+</div>
+</body>
+</html>

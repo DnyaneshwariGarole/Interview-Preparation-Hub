@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 30px 20px 20px;
+    /* background: linear-gradient(to right, #3498db, #6dd5fa); */
+       background: #2c3e50;
+    color: white;
+}
+
+.hero h1 {
+    margin: 0;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* MAIN */
+.container {
+    padding: 30px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 220px;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 30px;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5px;
+}
+
+.main-desc {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+/* QUESTIONS GRID */
+.questions {
+    max-width: 750px;
+}
+
+/* QUESTION CARD */
+.question {
+    background: white;
+    padding: 16px 18px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: 0.2s;
+}
+
+.question:hover {
+    border-color: #2c6e49;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* SUMMARY */
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* ANSWER */
+.question p {
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.6;
+}
+

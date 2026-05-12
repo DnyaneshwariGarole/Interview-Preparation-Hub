@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav">
+    <div></div>
+</div>
+
+<div class="container">
+
+    <h1 class="main-title">Questions on HTML</h1>
+
+    <div class="questions-grid">
+
+        <!-- LEFT COLUMN -->
+        <div class="column">
+
+            <details class="question">
+                <summary>What is HTML?</summary>
+                <p>
+                HTML stands for Hypertext Markup Language & It is a root frontend language, reference or link to 
+                visualize the content on UI(User Interface) with the Help of pre-defined tags which all browser
+                understandable
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>History of HTML</summary>
+                <p>
+                HTML was invented by Tim Berners-Lee in 1989.<br><br>
+
+                HTML1 → Basic structure in 1991<br>
+                HTML2 → Standard version in 1993<br>
+                HTML3 → Added tables in 1995<br>
+                HTML4 → Added CSS support in 1997<br>
+                HTML5 → Latest version with audio, video, semantic tags in 2014
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>Difference Between HTML4 & HTML5?</summary>
+                <p>
+                     i. In HTML 4 media tags not present<br>
+                     ii. Semantic tags was not introduced <br>
+                     iii. So many input attributes or from attributes were not present <br>
+                     iv. Default Storage of browser is not available
+
+                <br><br>
+
+                     i. In HTML 5 media tags are present<br>
+                     ii. Semantic tags are introduced <br>
+                     iii. All inputs & from attribute are available <br>
+                     iv. local Storage is a Default browser
+
+        
+            </details>
+
+            <details class="question">
+                <summary>What is DOCTYPE?</summary>
+                <p>
+                DOCTYPE is used to tell browser which version of HTML is used.<br><br>
+
+                It ensures proper rendering of webpage.<br><br>
+
+                Example:<br>
+                &lt;!DOCTYPE html&gt;
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What are HTML Tags?</summary>
+                <p>It is root tag of html which comes with lang attribute.
+                HTML tags are predefined keywords used to create elements.<br><br>
+
+                Types:<br>
+                1. Paired Tag → This will consist two tags as a pair first tag is opening tag & second
+                tag is closing tag<br>
+                2. Unpaired Tag → This will have only single tag hence it is called self closing
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is Element?</summary>
+                <p>
+                Element = Opening tag + Content + Closing tag<br><br>
+
+                Example:<br>
+                &lt;p&gt;Hello&lt;/p&gt;
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>Types of Element?</summary>
+                <p>There are 3 types of Elements
+
+                    <ul>1. Inline Element
+                        <li>Starts in same line</li>
+                        <li>Occupies only content width</li>
+                        <li>Allows other inline element to sit beside it</li>
+                        <li>Doesn't accept top and bottom margin</li>
+                       
+                    </ul>
+                     <ul>2. Block Element
+                        <li>Starts in new line</li>
+                        <li>Occupies entire width of webpages</li>
+                        <li>Won't allow any other elementto sit beside it</li>
+                        <li>Accepts top and bottom margin</li>
+                        
+                     </ul>
+                    <ul>3. Void Element
+                        <li>All unpair tags are void elements</li>
+                    </ul>
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is Attribute?</summary>
+                <p>Attribute are the added extension to tag which provides important information.
+                    Attribute are written in opening tag & Some attributes are only attribute nd some attributes are with values<br>
+                    <br>
+                    There are two types of Attributes
+                    <ul>1. Global or core attribute
+                        <li>style --> used to style the HTML element</li>
+                        <li>title --> attribute creates a tooltip for HTML element</li>
+                        <li>id --> targets only one HTML element</li>
+                        <li>class --> targets multiple HTML element</li>
+                    </ul>
+
+                    <ul>2. Element Specific Attribute
+                        <br>
+                        These attribute we can used inside some specific tags only 
+                        such as
+                        <li>src, alt in img tag</li>
+                        <li>href in anchor tag</li>
+                        <li>controls in audio & video tag</li>
+                    </ul>
+
+                Syntax:<br>
+                tag attribute="value"<br><br>
+
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What are List Creation in HTML?</summary>
+                <p>
+                Any items or content which we display one after one is called as list<br>
+
+                
+                <ol>There are 4 Types of List <
+                    <li>Ordered list --> In this list we define the items or content one after one 
+                        in order manner such as numbers, alphabets, letters.
+
+                        <br>
+                        To create the order list we used ol tag as root tag & to define the list items inside li tag
+                        <br> <br>Attributes of order list are type, start, reversed
+                        <br><br>
+                    </li>
+                    <li>Unordered list --> In this list defines list items in symbolic manner. Here don't follow any specific order
+                        <br>To create Unordered list we use ul tag as root tag & we define list items in li tag 
+                        <br>In Unordered list one attribute is present which is type=" " where we can mention the types of Unordered list such as 
+                        disc(by default) square, circle, none
+                    </li>
+                    <br><br>
+                    <li>Description list --> In description list we define some kind of description or important information
+                        for major content like heading. To create description list we used dl tag as root tag
+                    <br>To create description term we used dt tag
+                <br>To create description data we use dd tag</li>
+                <br><br>
+                    <li>Nested list --> Any Other list inside another list is called Nested list</li>
+                </ol>
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is Table Creation in HTML?</summary>
+                <p>
+                Table is logical Structure of rows, columns, and cells to display the data on user interface 
+                in systematic manner.
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What are tags we used to create the Table?</summary>
+                <p>
+                To create the table we used table tag as an root tag inside HTML. table tag is paired tag
+ 
+                The entire table we need to create inside table tag only 
+                <br>
+
+                Table we create row by row hence we used tr tag to created the rows in table & 
+                tr is also paired tag
+                <br> To define the table heading we used th tag
+                <br> To define the table data we used td tag 
+                <br> These both are the paired tag 
+                
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>Attributes of Table Tag?</summary>
+                <p>
+                <ul>
+                    <li>border </li>
+                    <li>cellpadding --> This attribute are used to increase the space inside the cell</li>
+                    <li>cellspacing --> This attribute are used to increase the space between the two cells</li>
+                    <li>rowspan --> This attribute merge the two or more rows inside a columns the value given in numbers</li>
+                    <li>colspan --> This attribute merge the two or more columns inside a rows the value given in numbers</li>
+                </ul><br><br>
+
+                
+            </details>
+            
+
+            <details class="question">
+                <summary>What is Image Handling?</summary>
+                <p>
+                Images are very comfortable way to convience the imp information in convient way to the users
+                <br>To print images on UI in Html we used <b>img tag</b> which comes with src & alt attribute
+                <br>It is Unpaired Tag (void element)
+                & also it acts like Inline Element
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>Attribute of Image tag?</summary>
+                <p>
+                height=" " & width=" "<br>the values are given in pixels or %
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is iframe?</summary>
+                <p>
+                iframe is used to insert another webpage inside current webpage.<br><br>
+
+                Example:<br>
+                YouTube video, Google Maps
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is alt attribute?</summary>
+                <p>
+                alt attribute gives description of image.<br><br>
+
+                Used when:<br>
+                Image not loaded<br>
+                For accessibility
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is meta tag?</summary>
+                <p>
+                Meta tag provides metadata about webpage.<br><br>
+
+                Used for:<br>
+                SEO<br>
+                Responsive design<br>
+                Charset
+                </p>
+            </details>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="column">
+
+            <details class="question">
+                <summary>Block vs Inline elements?</summary>
+                <p>
+                Block:<br>
+                Takes full width<br>
+                New line<br><br>
+
+                Inline:<br>
+                Takes required width<br>
+                Same line
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>Difference between id and class?</summary>
+                <p>
+                id:<br>
+                Unique<br>
+                Used once<br><br>
+
+                class:<br>
+                Reusable<br>
+                Used multiple times
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What are empty elements?</summary>
+                <p>
+                Elements without closing tag.<br><br>
+
+                Examples:<br>
+                br, hr, img, input
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is hyperlink?</summary>
+                <p>
+                Hyperlink is created using anchor tag.<br><br>
+
+                Used to navigate between pages.
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is table in HTML?</summary>
+                <p>
+                Table is used to display data in rows and columns.<br><br>
+
+                Tags:<br>
+                table, tr, th, td
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is list?</summary>
+                <p>
+                Lists are used to group items.<br><br>
+
+                Types:<br>
+                1. Ordered list<br>
+                2. Unordered list<br>
+                3. Description list
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is audio/video tag?</summary>
+                <p>
+                Used to insert media in webpage.<br><br>
+
+                audio → sound<br>
+                video → video file
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is local storage?</summary>
+                <p>
+                Local storage is used to store data in browser permanently.<br><br>
+
+                Data will not delete after refresh.
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is accessibility?</summary>
+                <p>
+                Accessibility means making website usable for all users including disabled users.<br><br>
+
+                Example:<br>
+                screen readers, alt text
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>What is SEO?</summary>
+                <p>
+                SEO (Search Engine Optimization) is used to improve website ranking on search engines.<br><br>
+
+                Helps website appear on Google.
+                </p>
+            </details>
+
+            <details class="question">
+                <summary>All Important HTML Tags</summary>
+                <p>
+                Structure Tags:<br>
+                html, head, body<br><br>
+
+                Text Tags:<br>
+                h1-h6, p, span, strong, em<br><br>
+
+                Link & Media:<br>
+                a, img, audio, video, iframe<br><br>
+
+                List Tags:<br>
+                ul, ol, li, dl<br><br>
+
+                Table Tags:<br>
+                table, tr, th, td<br><br>
+
+                Form Tags:<br>
+                form, input, label, textarea, select, option<br><br>
+
+                Semantic Tags:<br>
+                header, footer, nav, section, article
+                </p>
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+<div class="bottom-nav">
+    <a href="index.html" class="nav-btn">← Back</a>
+    <a href="css.html" class="nav-btn">Next →</a>
+</div>
+
+</html>

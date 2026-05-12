@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav"></div>
+
+<div class="container">
+
+<h1 class="main-title">JavaScript Interview Questions</h1>
+
+<div class="questions-grid">
+
+<!-- LEFT COLUMN -->
+<div class="column">
+
+<details class="question">
+<summary>What is JavaScript?</summary>
+<p>
+JavaScript is a high-level, interpreted programming language used to make web pages interactive. 
+It allows developers to handle events, manipulate the DOM, perform calculations, and update content dynamically 
+without reloading the page. It is widely used in both frontend and backend development.
+</p>
+</details>
+
+<details class="question">
+<summary>Difference between var, let, and const?</summary>
+<p>
+var is function-scoped and can be redeclared and updated. 
+let is block-scoped and cannot be redeclared in the same scope but can be updated. 
+const is also block-scoped but its value cannot be reassigned after initialization. 
+Using let and const is recommended in modern JavaScript.
+</p>
+</details>
+
+<details class="question">
+<summary>What is closure?</summary>
+<p>
+A closure is a function that remembers variables from its outer scope even after the outer function has executed. 
+It allows data to be preserved and is commonly used in callbacks, data privacy, and function factories.
+</p>
+</details>
+
+<details class="question">
+<summary>What is DOM?</summary>
+<p>
+DOM (Document Object Model) represents the HTML document as a tree structure. 
+JavaScript can access, modify, and manipulate elements in the DOM dynamically, 
+allowing interactive web applications.
+</p>
+</details>
+
+<details class="question">
+<summary>What are events?</summary>
+<p>
+Events are actions triggered by the user or browser, such as clicks, keypresses, or page loads. 
+JavaScript listens to these events and executes functions to respond, enabling interactivity.
+</p>
+</details>
+
+<details class="question">
+<summary>What is a function?</summary>
+<p>
+A function is a reusable block of code designed to perform a specific task. 
+Functions help organize code, improve readability, and avoid repetition.
+</p>
+</details>
+
+<details class="question">
+<summary>What is hoisting?</summary>
+<p>
+Hoisting is JavaScript's default behavior of moving variable and function declarations 
+to the top of their scope during compilation. However, only declarations are hoisted, 
+not initializations.
+</p>
+</details>
+
+<details class="question">
+<summary>What is event bubbling?</summary>
+<p>
+Event bubbling is a mechanism where an event starts from the target element 
+and propagates upward through its parent elements in the DOM hierarchy.
+</p>
+</details>
+
+<details class="question">
+<summary>What is event delegation?</summary>
+<p>
+Event delegation is a technique where a single event listener is added to a parent element 
+to handle events for multiple child elements. It improves performance and reduces memory usage.
+</p>
+</details>
+
+<details class="question">
+<summary>What is strict mode?</summary>
+<p>
+Strict mode is a feature in JavaScript that enables stricter parsing and error handling. 
+It helps catch common coding mistakes and prevents the use of unsafe actions.
+</p>
+</details>
+
+<details class="question">
+<summary>What is data type in JavaScript?</summary>
+<p>
+JavaScript has dynamic data types including primitive types (string, number, boolean, null, undefined, symbol, bigint) 
+and non-primitive types like objects and arrays.
+</p>
+</details>
+
+<details class="question">
+<summary>What is type coercion?</summary>
+<p>
+Type coercion is the automatic conversion of one data type to another by JavaScript. 
+It can be implicit (automatic) or explicit (manual), and can sometimes lead to unexpected results.
+</p>
+</details>
+
+<details class="question">
+<summary>What is undefined vs null?</summary>
+<p>
+undefined means a variable has been declared but not assigned a value. 
+null is an assignment value that represents no value or empty value.
+</p>
+</details>
+
+<details class="question">
+<summary>What is NaN?</summary>
+<p>
+NaN stands for "Not a Number". It is returned when a mathematical operation fails 
+or when a non-numeric value is used in a numeric operation.
+</p>
+</details>
+
+</div>
+
+<!-- RIGHT COLUMN -->
+<div class="column">
+
+<details class="question">
+<summary>What is a Promise?</summary>
+<p>
+A Promise is an object used to handle asynchronous operations. 
+It represents a value that may be available now, later, or never. 
+It has three states: pending, fulfilled, and rejected.
+</p>
+</details>
+
+<details class="question">
+<summary>What is async/await?</summary>
+<p>
+async/await is a modern way to handle asynchronous operations. 
+The async keyword makes a function return a promise, and await pauses execution 
+until the promise is resolved, making code easier to read.
+</p>
+</details>
+
+<details class="question">
+<summary>What is arrow function?</summary>
+<p>
+Arrow functions provide a shorter syntax for writing functions. 
+They do not have their own 'this' keyword and inherit it from the surrounding scope.
+</p>
+</details>
+
+<details class="question">
+<summary>Difference between == and ===?</summary>
+<p>
+== compares values after type conversion, while === compares both value and type strictly. 
+Using === is recommended to avoid unexpected results.
+</p>
+</details>
+
+<details class="question">
+<summary>What is localStorage?</summary>
+<p>
+localStorage is used to store data in the browser with no expiration time. 
+The data remains even after the browser is closed and is useful for saving user preferences.
+</p>
+</details>
+
+<details class="question">
+<summary>What is sessionStorage?</summary>
+<p>
+sessionStorage stores data only for the duration of the page session. 
+The data is cleared when the browser tab is closed.
+</p>
+</details>
+
+<details class="question">
+<summary>What is callback function?</summary>
+<p>
+A callback function is a function passed as an argument to another function 
+and is executed later, often used in asynchronous operations.
+</p>
+</details>
+
+<details class="question">
+<summary>What is scope in JavaScript?</summary>
+<p>
+Scope determines where variables are accessible. 
+It includes global scope, function scope, and block scope.
+</p>
+</details>
+
+<details class="question">
+<summary>What is closure vs scope?</summary>
+<p>
+Scope defines where variables can be accessed, while closure allows a function 
+to remember variables from its outer scope even after execution.
+</p>
+</details>
+
+<details class="question">
+<summary>What is setTimeout?</summary>
+<p>
+setTimeout is a function used to execute code after a specified delay. 
+It is commonly used for asynchronous operations.
+</p>
+</details>
+
+<details class="question">
+<summary>What is setInterval?</summary>
+<p>
+setInterval executes a function repeatedly at a fixed time interval 
+until it is stopped using clearInterval.
+</p>
+</details>
+
+<details class="question">
+<summary>What is JSON?</summary>
+<p>
+JSON (JavaScript Object Notation) is a lightweight data format 
+used to store and exchange data between server and client.
+</p>
+</details>
+
+<details class="question">
+<summary>What is fetch API?</summary>
+<p>
+Fetch API is used to make HTTP requests to servers. 
+It returns promises and is commonly used to get or send data asynchronously.
+</p>
+</details>
+
+<details class="question">
+<summary>What is difference between synchronous and asynchronous?</summary>
+<p>
+Synchronous code runs line by line, blocking execution. 
+Asynchronous code runs independently, allowing other operations to continue, 
+improving performance and responsiveness.
+</p>
+</details>
+
+</div>
+
+</div>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+<a href="css.html" class="nav-btn">← Back</a>
+<a href="java.html" class="nav-btn">Next →</a>
+</div>
+
+</div>
+
+</body>
+</html>

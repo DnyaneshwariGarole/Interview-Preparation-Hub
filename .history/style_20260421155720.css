@@ -1,0 +1,86 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* TOP SECTION */
+.top {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 60px;
+}
+
+.top h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.top p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* MAIN */
+.container {
+    max-width: 1000px;
+    margin: -40px auto 0;   /* 🔥 pull cards up */
+    padding: 20px;
+}
+
+/* SECTION TITLE */
+.section-title {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* CARD */
+.card {
+    background: white;
+    width: 230px;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 40px;
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQL Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav"></div>
+
+<div class="container">
+
+<h1 class="main-title">SQL Interview Questions</h1>
+
+<div class="questions-grid">
+
+<div class="column">
+
+<details class="question">
+<summary>What is SQL?</summary>
+<p>
+SQL (Structured Query Language) is used to manage and manipulate relational databases. 
+It allows users to create, read, update, and delete data, as well as define database structure.
+</p>
+</details>
+
+<details class="question">
+<summary>What is primary key?</summary>
+<p>
+A primary key is a column or set of columns that uniquely identifies each row in a table. 
+It cannot contain NULL values and must be unique for every record.
+</p>
+</details>
+
+<details class="question">
+<summary>What is foreign key?</summary>
+<p>
+A foreign key is a column that creates a relationship between two tables. 
+It refers to the primary key in another table and ensures referential integrity.
+</p>
+</details>
+
+<details class="question">
+<summary>What are joins?</summary>
+<p>
+Joins are used to combine data from multiple tables based on a related column. 
+Common types include INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN.
+</p>
+</details>
+
+<details class="question">
+<summary>What is normalization?</summary>
+<p>
+Normalization is the process of organizing data to reduce redundancy 
+and improve data consistency. It divides tables into smaller related tables.
+</p>
+</details>
+
+<details class="question">
+<summary>What is index?</summary>
+<p>
+An index is used to improve the speed of data retrieval operations. 
+It works like a pointer that helps locate data quickly without scanning the entire table.
+</p>
+</details>
+
+<details class="question">
+<summary>What is GROUP BY?</summary>
+<p>
+GROUP BY is used to group rows that have the same values in specified columns. 
+It is commonly used with aggregate functions.
+</p>
+</details>
+
+<details class="question">
+<summary>What is HAVING?</summary>
+<p>
+HAVING is used to filter grouped data after applying GROUP BY. 
+It works with aggregate functions to filter results.
+</p>
+</details>
+
+<details class="question">
+<summary>What is ORDER BY?</summary>
+<p>
+ORDER BY is used to sort query results in ascending (ASC) or descending (DESC) order 
+based on one or more columns.
+</p>
+</details>
+
+<details class="question">
+<summary>What is DISTINCT?</summary>
+<p>
+DISTINCT is used to remove duplicate values from the result set 
+and return only unique records.
+</p>
+</details>
+
+<details class="question">
+<summary>What is NULL?</summary>
+<p>
+NULL represents missing or unknown data in a database. 
+It is different from zero or empty string and requires special handling.
+</p>
+</details>
+
+<details class="question">
+<summary>What is constraint?</summary>
+<p>
+Constraints are rules applied on table columns to enforce data integrity. 
+Examples include NOT NULL, UNIQUE, PRIMARY KEY, and FOREIGN KEY.
+</p>
+</details>
+
+<details class="question">
+<summary>What is default constraint?</summary>
+<p>
+A default constraint assigns a default value to a column 
+when no value is provided during insertion.
+</p>
+</details>
+
+<details class="question">
+<summary>What is unique constraint?</summary>
+<p>
+A UNIQUE constraint ensures that all values in a column are different, 
+but it can allow one NULL value.
+</p>
+</details>
+
+</div>
+
+<div class="column">
+
+<details class="question">
+<summary>Difference between WHERE and HAVING?</summary>
+<p>
+WHERE filters rows before grouping, while HAVING filters data after GROUP BY. 
+WHERE cannot use aggregate functions, but HAVING can.
+</p>
+</details>
+
+<details class="question">
+<summary>What is aggregate function?</summary>
+<p>
+Aggregate functions perform calculations on multiple rows 
+and return a single result. Examples include COUNT, SUM, AVG, MIN, and MAX.
+</p>
+</details>
+
+<details class="question">
+<summary>What is subquery?</summary>
+<p>
+A subquery is a query inside another query. 
+It is used to retrieve data that will be used in the main query.
+</p>
+</details>
+
+<details class="question">
+<summary>What is view?</summary>
+<p>
+A view is a virtual table based on a SQL query. 
+It does not store data physically but displays data from one or more tables.
+</p>
+</details>
+
+<details class="question">
+<summary>What is DELETE vs TRUNCATE?</summary>
+<p>
+DELETE removes specific rows and can be rolled back, 
+while TRUNCATE removes all rows quickly and cannot be rolled back.
+</p>
+</details>
+
+<details class="question">
+<summary>What is ACID?</summary>
+<p>
+ACID properties ensure reliable transactions: 
+Atomicity (all or nothing), Consistency (valid state), 
+Isolation (independent transactions), and Durability (permanent storage).
+</p>
+</details>
+
+<details class="question">
+<summary>What is database?</summary>
+<p>
+A database is a structured collection of data stored electronically 
+and managed using a database management system (DBMS).
+</p>
+</details>
+
+<details class="question">
+<summary>What is DDL, DML, DCL?</summary>
+<p>
+DDL (Data Definition Language) defines structure (CREATE, ALTER), 
+DML (Data Manipulation Language) manages data (INSERT, UPDATE), 
+DCL (Data Control Language) controls access (GRANT, REVOKE).
+</p>
+</details>
+
+<details class="question">
+<summary>What is UNION?</summary>
+<p>
+UNION is used to combine results of two or more SELECT queries 
+and removes duplicate records.
+</p>
+</details>
+
+<details class="question">
+<summary>What is UNION ALL?</summary>
+<p>
+UNION ALL combines results of multiple queries but includes duplicate records 
+and performs faster than UNION.
+</p>
+</details>
+
+<details class="question">
+<summary>What is INNER JOIN?</summary>
+<p>
+INNER JOIN returns only matching records from both tables 
+based on a condition.
+</p>
+</details>
+
+<details class="question">
+<summary>What is LEFT JOIN?</summary>
+<p>
+LEFT JOIN returns all records from the left table 
+and matching records from the right table. 
+If no match is found, NULL values are returned.
+</p>
+</details>
+
+<details class="question">
+<summary>What is RIGHT JOIN?</summary>
+<p>
+RIGHT JOIN returns all records from the right table 
+and matching records from the left table.
+</p>
+</details>
+
+<details class="question">
+<summary>What is FULL JOIN?</summary>
+<p>
+FULL JOIN returns all records when there is a match in either left or right table. 
+If no match exists, NULL values are returned.
+</p>
+</details>
+
+</div>
+
+</div>
+
+<div class="bottom-nav">
+<a href="java.html" class="nav-btn">← Back</a>
+<a href="spring.html" class="nav-btn">Next →</a>
+</div>
+
+</div>
+</body>
+</html>

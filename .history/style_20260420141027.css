@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+}
+
+/* NAVBAR */
+.nav {
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* FILTERS */
+.filters {
+    margin-top: 8px;
+}
+
+.filters label {
+    margin-right: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* MAIN */
+.container {
+    padding: 30px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 30px;
+}
+
+/* ===== CSS FILTER LOGIC ===== */
+
+/* hide all by default */
+.cards .card {
+    display: block;
+}
+
+/* HTML filter */
+#htmlBtn:checked ~ .container .html {
+    display: block;
+}
+#htmlBtn:checked ~ .container .card:not(.html) {
+    display: none;
+}
+
+/* CSS filter */
+#cssBtn:checked ~ .container .css {
+    display: block;
+}
+#cssBtn:checked ~ .container .card:not(.css) {
+    display: none;
+}
+
+/* JS filter */
+#jsBtn:checked ~ .container .js {
+    display: block;
+}
+#jsBtn:checked ~ .container .card:not(.js) {
+    display: none;
+}
+
+/* Java filter */
+#javaBtn:checked ~ .container .java {
+    display: block;
+}
+#javaBtn:checked ~ .container .card:not(.java) {
+    display: none;
+}
+
+/* SQL filter */
+#sqlBtn:checked ~ .container .sql {
+    display: block;
+}
+#sqlBtn:checked ~ .container .card:not(.sql) {
+    display: none;
+}
