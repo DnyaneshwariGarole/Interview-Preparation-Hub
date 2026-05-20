@@ -25,9 +25,6 @@ This project helps students and freshers quickly revise important interview topi
 
 ---
 
-## 🗄 SQL Questions Page
-
-![SQL Questions](./screenshots/sql-questions.png)
 
 ---
 
