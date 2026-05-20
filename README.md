@@ -22,19 +22,6 @@ This project helps students and freshers quickly revise important interview topi
 - HTML5
 - CSS3
 
----
-
-# 📸 Project Screenshots
-
-## 🏠 Home Page
-
-![Home Page](./screenshots/home-page.png)
-
----
-
-## 📘 HTML Questions Page
-
-![HTML Questions](./screenshots/html-questions.png)
 
 ---
 
