@@ -32,7 +32,6 @@ This project helps students and freshers quickly revise important interview topi
 - SQL
 - Spring
 
----
 
 # 📌 Project Purpose
 
