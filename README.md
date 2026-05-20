@@ -21,7 +21,7 @@ This project helps students and freshers quickly revise important interview topi
 
 - HTML5
 - CSS3
-
+---
 
 # 📂 Subjects Included
 
@@ -32,6 +32,7 @@ This project helps students and freshers quickly revise important interview topi
 - SQL
 - Spring
 
+---
 
 # 📌 Project Purpose
 
@@ -74,5 +75,4 @@ git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git
 
 - GitHub: https://github.com/DnyaneshwariGarole
 - LinkedIn: https://www.linkedin.com/in/dnyaneshwari-garole-429202280
-
 
