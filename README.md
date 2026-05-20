@@ -28,9 +28,6 @@ This project helps students and freshers quickly revise important interview topi
 
 ---
 
-## 📖 Expanded Answer View
-
-![Expanded Answer](./screenshots/expanded-answer.png)
 
 ---
 
